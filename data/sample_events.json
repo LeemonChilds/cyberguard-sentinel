@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "dataset_name": "CYBERGUARD SENTINEL — Offline Educational Demo Dataset",
+    "version": "1.0",
+    "is_simulated": true,
+    "description": "Dataset aman tanpa koneksi internet untuk simulasi pameran teknologi."
+  },
+  "demo_events": [
+    {
+      "event_type": "PHISHING_URL_DETECTED",
+      "source_module": "PHISHING_DETECTION_ENGINE",
+      "severity": "HIGH",
+      "risk_score": 75,
+      "description": "[SIMULASI] Tautan http://192.168.1.55@login-bank-verify.tk terdeteksi menggunakan IP host & simbol '@'."
+    },
+    {
+      "event_type": "FILE_INTEGRITY_MODIFIED",
+      "source_module": "FILE_INTEGRITY_MONITOR",
+      "severity": "HIGH",
+      "risk_score": 75,
+      "description": "[SIMULASI] Sidik jari SHA-256 pada file kebijakan_keamanan.txt berubah dari baseline resmi."
+    },
+    {
+      "event_type": "PORT_EXPOSURE_DETECTED",
+      "source_module": "PORT_SECURITY_SCANNER",
+      "severity": "MEDIUM",
+      "risk_score": 40,
+      "description": "[SIMULASI] Port 445 (SMB) terdeteksi terbuka pada simulasi audit lokal."
+    },
+    {
+      "event_type": "NETWORK_ANOMALY_DETECTED",
+      "source_module": "NETWORK_MONITORING_ENGINE",
+      "severity": "MEDIUM",
+      "risk_score": 35,
+      "description": "[SIMULASI] Layanan mendengarkan pada antarmuka publik 0.0.0.0:445."
+    }
+  ]
+}
